@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="script.js" defer></script>
+
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52Wl-VsqldTqGHeDaFyU-H5hB0E-YuccYXA&usqp=CAU" type="image/x-icon">
+
 </head>
 <body>
     <h1>ETCH-A-SKETCH</h1>
@@ -15,7 +18,7 @@
         <!-- Incluir Color mode, grid size regulator y clear buttons -->
         <h3>Configuration Feautures </h3>
         <button onclick="changeColor('black')" class="btn-dark">Black</button>
-        <button onclick="changeColor('black')" class="choose-color">Select color</button>
+        <button onclick="apologize()" class="choose-color">Select color</button>
         <button onclick="changeColor('white')" class="btn-light">Erasor</button>
         <button onclick="changeColor('random')" class="btn-random">Random</button>
         <div>
@@ -30,6 +33,11 @@
         <!--Container del grid-->
     </div>
     </div>
+    <script>
+        function  apologize() {
+            window.prompt("Funcionality in development by the moment. Please use Black, White, and Random colors by the moment. Hope to enable this feature soon. ")
+        }
+    </script>
 
 
 
