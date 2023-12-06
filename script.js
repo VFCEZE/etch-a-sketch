@@ -39,21 +39,33 @@ gridSizeSlider.addEventListener('input', function () {
 // Llama a la función inicialmente con el tamaño predeterminado
 populateBoard(16);
 
+// Obtener referencia al botón de color y al input de color
+const colorPickerBtn = document.querySelector('.colorPicker');
+let rgbColor = document.querySelector('.rgbColor')
+
+
+function changeColor(choice) {
+
+    // Si el color es 'input', obtener el valor del input de color
+    if (choice === 'colorPickerBtn') {
+        color = rgbColor.value;
+        
+    } else {
+        color = choice;
+    }
+}
+
+//  Como elegir color para pintar Squares
 function paintSquare () {
     if (click) { 
     if (color === 'random') {
         this.style.backgroundColor = `hsl(${Math.random()*360}, 100%, 50%)` // crear variable de color randoms
     } else {
        this.style.backgroundColor = color 
-    }}
- 
-
-    
+    }} 
 }
 
-function changeColor (choice) {
-    color = choice
-}
+
 
 // Funcion que reincia el grid
 function clearGrid() {
@@ -67,5 +79,7 @@ function clearGrid() {
 document.querySelector('.board').addEventListener('click', () => {
     click = !click
 })
+
+
 
 

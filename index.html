@@ -17,31 +17,27 @@
     <div class="features">
         <!-- Incluir Color mode, grid size regulator y clear buttons -->
         <h3>Configuration Feautures </h3>
-        <button onclick="changeColor('black')" class="btn-dark">Black</button>
-        <button onclick="apologize()" class="choose-color">Select color</button>
+        <button onclick="changeColor('black')" class="btn-black">Black</button>
+        <button onclick="changeColor('colorPickerBtn')" class="colorPicker"> Color <input type="color" class="rgbColor"></button>
         <button onclick="changeColor('white')" class="btn-light">Erasor</button>
         <button onclick="changeColor('random')" class="btn-random">Random</button>
+        <button onclick="clearGrid()" class="btn-light">Clear Grid</button>
+        <!-- Agregar grid size regulator con barra -->
         <div>
         <input type="range" id="gridSizeSlider" min="1" max="50" value="16">
          <span id="gridSizeLabel">Tamaño: 16x16</span>
         </div>
          
-        <button onclick="clearGrid()" class="btn-light">Clear Grid</button>
-        <!-- Agregar grid size regulator con barra -->
+        
     </div>
     <div class="board">
         <!--Container del grid-->
     </div>
     </div>
-    <script>
-        function  apologize() {
-            window.prompt("Funcionality in development by the moment. Please use Black, White, and Random colors by the moment. Hope to enable this feature soon. ")
-        }
-    </script>
-
-
-
-
+    <div class="p">
+    <p>Users can draw and create designs by moving a virtual pointer across the screen, just like on the original toy.</p>
+    <p>Click in the board and explore your creativity</p>
+    </div>
 <!-- Footer Personal VFCEZE -->
     <div class="footer">
         <div></div>
